@@ -40,3 +40,16 @@ wowsers([1, 2, 3, 4, 5, 6]);
     - Just console.log the outpout on each loop iteration.
     - Separate each iteration with ( ----------- ) at this index. */
 
+    function arrayLoop(array, numberOfLoops) {
+        for(let integer = 0; integer < array.length * numberOfLoops; integer++) {
+          if(integer % array.length != 0 || integer === 0) {
+            console.log(array[(integer % array.length)]);
+          } else {
+            console.log('------');
+            console.log(array[(integer % array.length)]);
+          }
+        }
+        console.log('------')
+      }
+      
+      arrayLoop([1,2,3], 3);
