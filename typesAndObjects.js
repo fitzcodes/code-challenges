@@ -15,5 +15,4 @@
 // Classes are not instantiated, they are just blueprints
 // Classes, when instantiated, become objects
 
-const sportsCar = new Car();
-const blueSuv = new Car();
+
